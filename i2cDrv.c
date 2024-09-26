@@ -106,7 +106,7 @@ static THD_FUNCTION(i2cThread, arg) {
 }//static THD_FUNCTION(i2cThread, arg)
 
 void i2c1Init(void){
-    palSetPadMode(GPIOB, GPIOB_PIN6, PAL_MODE_STM32_ALTERNATE_OPENDRAIN);
+    palSetPadMode(GPIOB, GPIOB_ARD_D10, PAL_MODE_STM32_ALTERNATE_OPENDRAIN);//GPIOB_PIN6
     palSetPadMode(GPIOB, GPIOB_PIN7, PAL_MODE_STM32_ALTERNATE_OPENDRAIN);
 
     i2cStart(&I2CD1, &i2cfg1);

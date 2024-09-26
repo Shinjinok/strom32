@@ -99,8 +99,8 @@ void USBinit(void){
     usbStart(serusbcfg.usbp, &usbcfg);
     usbConnectBus(serusbcfg.usbp);
 
-    palSetPadMode(GPIOB, GPIOB_PIN5, PAL_MODE_OUTPUT_PUSHPULL);
-    palSetPad(GPIOB, GPIOB_PIN5); //enable usb
+    palSetPadMode(GPIOB, GPIOB_ARD_D4, PAL_MODE_OUTPUT_PUSHPULL);//GPIOB_PIN5
+    palSetPad(GPIOB, GPIOB_ARD_D4); //enable usb//GPIOB_PIN5
 }
 void find_drirection(int motor_number){
   float ang=0.0;

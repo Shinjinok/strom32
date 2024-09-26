@@ -83,13 +83,13 @@ endif
 #
 
 # Define project name here
-PROJECT = ch
+PROJECT = storm32
 
 # Target settings.
 MCU  = cortex-m3
 
 # Imported source files and paths.
-CHIBIOS  := chibios
+CHIBIOS  := ChibiOS
 CONFDIR  := ./cfg
 BUILDDIR := ./build
 DEPDIR   := ./.dep
