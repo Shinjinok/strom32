@@ -123,20 +123,20 @@ LDSCRIPT= $(STARTUPLD)/STM32F103xB.ld
 # setting.
 CSRC = $(ALLCSRC) \
        $(TESTSRC) \
-       pwm.c \
-       usbcfg.c \
-       foc_utils.c \
-       mpu6050.c \
-       as5600.c \
-       i2cDrv.c
+       src/pwm.c \
+       src/usbcfg.c \
+       src/foc_utils.c \
+       src/mpu6050.c \
+       src/as5600.c \
+       src/i2cDrv.c
 
 
 # C++ sources that can be compiled in ARM or THUMB mode depending on the global
 # setting.
 CPPSRC = $(ALLCPPSRC) \
-        main.cpp \
-        pid.cpp \
-        time_utils.cpp
+        src/main.cpp \
+        src/pid.cpp \
+        src/time_utils.cpp
 
 # List ASM source files here.
 ASMSRC = $(ALLASMSRC)
